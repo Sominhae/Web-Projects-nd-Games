@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping List</title>
+</head>
+<body>
+
+<h2>Shopping List</h2>
+
+<input type="text" id="item" placeholder="Enter item">
+<button onclick="addItem()">Add</button>
+
+<ul id="list"></ul>
+
+<script>
+function addItem() {
+    let input = document.getElementById("item");
+    let item = input.value;
+
+    if (item === "") {
+        alert("Please enter an item");
+        return;
+    }
+
+    let li = document.createElement("li");
+    li.textContent = item + " ";
+
+    let button = document.createElement("button");
+    button.textContent = "Remove";
+
+    button.onclick = function() {
+        li.remove();
+    };
+
+    li.appendChild(button);
+    document.getElementById("list").appendChild(li);
+
+    input.value = "";
+}
+</script>
+
+</body>
+</html>

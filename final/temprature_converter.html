@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Temperature Converter</title>
+</head>
+<body>
+
+<h2>Celsius to Fahrenheit</h2>
+
+<input type="number" id="celsius" oninput="convertTemp()">
+
+<p id="result"></p>
+
+<script>
+function convertTemp() {
+    let celsius = document.getElementById("celsius").value;
+    let result = document.getElementById("result");
+
+    if (celsius === "") {
+        result.textContent = "";
+        return;
+    }
+
+    let fahrenheit = (celsius * 9 / 5) + 32;
+
+    result.textContent = "Fahrenheit: " + fahrenheit;
+}
+</script>
+
+</body>
+</html>

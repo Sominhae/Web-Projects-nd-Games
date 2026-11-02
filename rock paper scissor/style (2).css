@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font: arial;
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.game-box {
+    width: 90%;
+    background-color: #333;
+    border-radius: 1rem;
+    height: 90vh;
+    padding: 25px;
+}
+
+.players {
+    display: flex;
+    gap: 1rem;
+}
+
+.player-card {
+    flex: 1;
+    background-color: #444;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.choice {
+    font-size: 45px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem;
+}

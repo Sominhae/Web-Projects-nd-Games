@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Counter</title>
+</head>
+<body>
+
+<h2>Attendance Counter</h2>
+
+<p>Present: <span id="present">0</span></p>
+<p>Absent: <span id="absent">0</span></p>
+
+<button onclick="addPresent()">Present</button>
+<button onclick="addAbsent()">Absent</button>
+
+<script>
+let present = 0;
+let absent = 0;
+
+function addPresent() {
+    present++;
+    document.getElementById("present").textContent = present;
+}
+
+function addAbsent() {
+    absent++;
+    document.getElementById("absent").textContent = absent;
+}
+</script>
+
+</body>
+</html>

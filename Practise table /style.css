@@ -1,0 +1,30 @@
+body{ 
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 700px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #666;
+    padding: 8px 12px;
+}
+
+th{
+    background-color:#e67e22;
+    color: black;
+    font-weight: bold;
+}
+
+.yes{ 
+    background-color: gray;
+}
+
+.no{
+    background-color: rgb(205, 200, 200);
+}

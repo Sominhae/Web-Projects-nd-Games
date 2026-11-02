@@ -1,0 +1,15 @@
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 60px); 
+}
+
+.cell {
+    padding: 8px 12px;
+    text-align: center;
+    font-size: 25px;
+}
+
+button {
+    margin-top: 20px;
+}
